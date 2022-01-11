@@ -1,0 +1,55 @@
+﻿<Window x:Class="_2_zd_calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2_zd_calc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="326" Margin="235,0,0,0" VerticalAlignment="Center" Width="230">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="281*"/>
+            </Grid.RowDefinitions>
+            <TextBox AutomationProperties.IsOffscreenBehavior="Default" BorderThickness="5,5,5,5" Text="123445+4567" FlowDirection="RightToLeft" HorizontalScrollBarVisibility="Auto" Padding="5,0,0,-6" >
+                <TextBox.FocusVisualStyle>
+                    <Style/>
+                </TextBox.FocusVisualStyle>
+                <TextBox.ContextMenu>
+                    <ContextMenu/>
+                </TextBox.ContextMenu>
+            </TextBox>
+            <UniformGrid Grid.Row="1" Rows="6" Columns="4">
+                <Button Click="Button_Click" Content="%"></Button>
+                <Button Content="CE"></Button>
+                <Button Content="C"></Button>
+                <Button Content="←"></Button>
+                <Button Content="1/x"></Button>
+                <Button Content="x²"></Button>
+                <Button Content="√x"></Button>
+                <Button Content="÷"></Button>
+                <Button Content="7"></Button>
+                <Button Content="8"></Button>
+                <Button Content="9"></Button>
+                <Button Content="x"></Button>
+                <Button Content="4"></Button>
+                <Button Content="5"></Button>
+                <Button Content="6"></Button>
+                <Button Content="-"></Button>
+                <Button Content="1"></Button>
+                <Button Content="2"></Button>
+                <Button Content="3"></Button>
+                <Button Content="+"></Button>
+                <Button Content="∓"></Button>
+                <Button Content="0"></Button>
+                <Button Content=","></Button>
+                <Button Content="="></Button>
+
+            </UniformGrid>
+
+        </Grid>
+
+    </Grid>
+</Window>
